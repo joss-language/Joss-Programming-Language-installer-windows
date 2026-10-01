@@ -3,6 +3,7 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media;
 using System;
+using System.Diagnostics;
 using System.IO;
 using Windows.Graphics;
 using Windows.Storage.Pickers;
@@ -14,13 +15,13 @@ namespace Joss_Programming_Language_installer
     public sealed partial class MainWindow : Window
     {
         private readonly InstallationService _installService = new();
+        private bool _isBusy = false;
 
         public MainWindow()
         {
             this.InitializeComponent();
 
-            // Tamaño inicial ajustado para mostrar cómodamente la ventana
-            this.AppWindow.Resize(new SizeInt32(660, 560));
+            this.AppWindow.Resize(new SizeInt32(660, 580));
             this.ExtendsContentIntoTitleBar = true;
             this.SetTitleBar(AppTitleBar);
 
@@ -28,6 +29,9 @@ namespace Joss_Programming_Language_installer
             TxtInstallPath.Text = defaultPath;
 
             TrySetMicaBackdrop();
+
+            // Cargar el estado inicial de instalación en segundo plano
+            _ = CheckSystemStatusAsync();
         }
 
         private void TrySetMicaBackdrop()
@@ -38,12 +42,37 @@ namespace Joss_Programming_Language_installer
             }
         }
 
+        private async System.Threading.Tasks.Task CheckSystemStatusAsync()
+        {
+            string targetDir = TxtInstallPath.Text.Trim();
+            string currentVer = await _installService.GetInstalledVersionAsync(targetDir);
+
+            if (!string.IsNullOrEmpty(currentVer))
+            {
+                TxtCurrentInstalledTitle.Text = "Joss detectado en el equipo";
+                TxtCurrentInstalledVer.Text = $"Versión instalada: {currentVer} | Ubicación: {targetDir}";
+                IconEnvStatus.Glyph = "\uE73E"; // Check
+                IconEnvStatus.Foreground = (Brush)Application.Current.Resources["SystemFillColorSuccessBrush"];
+            }
+            else
+            {
+                TxtCurrentInstalledTitle.Text = "Joss no está instalado";
+                TxtCurrentInstalledVer.Text = "El compilador no se encuentra en la ruta seleccionada.";
+                IconEnvStatus.Glyph = "\uE783"; // Warning / Info
+                IconEnvStatus.Foreground = (Brush)Application.Current.Resources["SystemFillColorCautionBrush"];
+            }
+        }
+
+        private async void BtnRefreshStatus_Click(object sender, RoutedEventArgs e)
+        {
+            await CheckSystemStatusAsync();
+        }
+
         private void CmbAction_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            // Si la UI aún se está construyendo, ignorar el evento inicial
             if (TxtHeaderTitle == null || BtnAction == null || CardPath == null) return;
-
             if (CmbAction.SelectedItem is not ComboBoxItem item) return;
+
             string action = item.Tag?.ToString() ?? "Install";
 
             switch (action)
@@ -102,15 +131,23 @@ namespace Joss_Programming_Language_installer
             if (folder != null)
             {
                 TxtInstallPath.Text = Path.Combine(folder.Path, "Joss");
+                await CheckSystemStatusAsync();
             }
         }
 
         private async void BtnAction_Click(object sender, RoutedEventArgs e)
         {
+            if (_isBusy) return;
+
+            // Iniciar fase de progreso
+            _isBusy = true;
             OptionsPanel.Visibility = Visibility.Collapsed;
             ProgressPanel.Visibility = Visibility.Visible;
+            QuickActionsPanel.Visibility = Visibility.Collapsed;
+            BtnBackToMenu.Visibility = Visibility.Collapsed;
             BtnAction.IsEnabled = false;
             BtnCancel.IsEnabled = false;
+            TxtConsoleLog.Text = "";
 
             string action = ((ComboBoxItem)CmbAction.SelectedItem).Tag?.ToString() ?? "Install";
             string targetDir = TxtInstallPath.Text.Trim();
@@ -132,6 +169,7 @@ namespace Joss_Programming_Language_installer
                 LogScroller.ChangeView(null, LogScroller.ScrollableHeight, null);
             });
 
+            bool success = false;
             try
             {
                 if (action == "Uninstall")
@@ -146,6 +184,7 @@ namespace Joss_Programming_Language_installer
 
                 IconStatus.Glyph = "\uE73E";
                 IconStatus.Foreground = (Brush)Application.Current.Resources["SystemFillColorSuccessBrush"];
+                success = true;
             }
             catch (Exception ex)
             {
@@ -159,11 +198,59 @@ namespace Joss_Programming_Language_installer
             }
             finally
             {
-                BtnCancel.Visibility = Visibility.Collapsed;
-                BtnAction.Content = "Finalizar";
-                BtnAction.IsEnabled = true;
-                BtnAction.Click -= BtnAction_Click;
-                BtnAction.Click += (s, args) => this.Close();
+                _isBusy = false;
+                BtnCancel.IsEnabled = true;
+                BtnBackToMenu.Visibility = Visibility.Visible; // Permitir regresar al menú
+                BtnAction.Visibility = Visibility.Collapsed;
+
+                if (success && action != "Uninstall")
+                {
+                    QuickActionsPanel.Visibility = Visibility.Visible;
+                }
+
+                // Actualizar tarjeta de estado tras la operación
+                _ = CheckSystemStatusAsync();
+            }
+        }
+
+        // Volver a la pantalla principal sin cerrar la aplicación
+        private void BtnBackToMenu_Click(object sender, RoutedEventArgs e)
+        {
+            ProgressPanel.Visibility = Visibility.Collapsed;
+            OptionsPanel.Visibility = Visibility.Visible;
+
+            BtnBackToMenu.Visibility = Visibility.Collapsed;
+            BtnAction.Visibility = Visibility.Visible;
+            BtnAction.IsEnabled = true;
+        }
+
+        // Acciones rápidas tras instalar
+        private void BtnOpenTerminal_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                // Inicia wt.exe (Windows Terminal) o powershell.exe en el directorio de usuario
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = "powershell.exe",
+                    Arguments = "-NoExit -Command Write-Host 'Bienvenido a Joss' -ForegroundColor Cyan; joss version",
+                    UseShellExecute = true
+                });
+            }
+            catch { }
+        }
+
+        private void BtnOpenFolder_Click(object sender, RoutedEventArgs e)
+        {
+            string targetDir = TxtInstallPath.Text.Trim();
+            if (Directory.Exists(targetDir))
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = "explorer.exe",
+                    Arguments = targetDir,
+                    UseShellExecute = true
+                });
             }
         }
 

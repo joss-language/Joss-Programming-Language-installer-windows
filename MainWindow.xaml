@@ -2,7 +2,7 @@
     x:Class="Joss_Programming_Language_installer.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    Title="Joss Programming Language - Setup">
+    Title="Joss SDK &amp; Environment Manager">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
@@ -18,25 +18,48 @@
         <Grid x:Name="AppTitleBar" Grid.Row="0" Padding="16,0,0,0">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Spacing="8">
                 <FontIcon Glyph="&#xE756;" FontSize="14" Foreground="{ThemeResource AccentTextFillColorPrimaryBrush}"/>
-                <TextBlock Text="JosSecurity Action Setup" Style="{StaticResource CaptionTextBlockStyle}" Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+                <TextBlock Text="Joss Programming Language Manager" Style="{StaticResource CaptionTextBlockStyle}" Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
             </StackPanel>
         </Grid>
 
-        <!-- ScrollViewer que evita que se corte el contenido -->
+        <!-- ScrollViewer que evita cortes de pantalla -->
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
             <Grid Padding="28,8,28,16">
 
-                <!-- PANEL 1: SELECCIÓN Y CONFIGURACIÓN -->
+                <!-- VISTA 1: MENÚ PRINCIPAL Y CONFIGURACIÓN -->
                 <StackPanel x:Name="OptionsPanel" Spacing="16" Visibility="Visible">
+
+                    <!-- Tarjeta de Estado del Sistema -->
+                    <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
+                            BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                            BorderThickness="1" CornerRadius="8" Padding="16">
+                        <Grid ColumnDefinitions="Auto, *, Auto" ColumnSpacing="16" VerticalAlignment="Center">
+                            <FontIcon x:Name="IconEnvStatus" Glyph="&#xE73E;" FontSize="28" 
+                                      Foreground="{ThemeResource AccentTextFillColorPrimaryBrush}" VerticalAlignment="Center"/>
+                            <StackPanel Grid.Column="1" Spacing="2">
+                                <TextBlock x:Name="TxtCurrentInstalledTitle" Text="Estado del entorno" Style="{StaticResource BodyStrongTextBlockStyle}"/>
+                                <TextBlock x:Name="TxtCurrentInstalledVer" Text="Verificando instalación local..." 
+                                           Style="{StaticResource CaptionTextBlockStyle}" 
+                                           Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+                            </StackPanel>
+                            <Button Grid.Column="2" Click="BtnRefreshStatus_Click" VerticalAlignment="Center">
+                                <StackPanel Orientation="Horizontal" Spacing="6">
+                                    <FontIcon Glyph="&#xE72C;" FontSize="12"/>
+                                    <TextBlock Text="Actualizar"/>
+                                </StackPanel>
+                            </Button>
+                        </Grid>
+                    </Border>
+
                     <!-- Encabezado dinámico -->
                     <StackPanel Spacing="4">
-                        <TextBlock x:Name="TxtHeaderTitle" Text="JosSecurity Manager" Style="{StaticResource TitleTextBlockStyle}" FontWeight="SemiBold"/>
-                        <TextBlock x:Name="TxtHeaderDesc" Text="Selecciona una acción para administrar el entorno de Joss." 
+                        <TextBlock x:Name="TxtHeaderTitle" Text="Administrar Joss" Style="{StaticResource TitleTextBlockStyle}" FontWeight="SemiBold"/>
+                        <TextBlock x:Name="TxtHeaderDesc" Text="Selecciona una acción para aplicar sobre tu entorno local." 
                                    Style="{StaticResource BodyTextBlockStyle}" 
                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
                     </StackPanel>
 
-                    <!-- Tarjeta 1: Selector de Modo / Acción -->
+                    <!-- Tarjeta: Selector de Acción -->
                     <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
                             BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
                             BorderThickness="1" CornerRadius="8" Padding="16">
@@ -45,13 +68,13 @@
                             <ComboBox x:Name="CmbAction" HorizontalAlignment="Stretch" SelectedIndex="0" SelectionChanged="CmbAction_SelectionChanged">
                                 <ComboBoxItem Tag="Install">Instalar (Joss Runtime + Extensión VS Code)</ComboBoxItem>
                                 <ComboBoxItem Tag="Update">Actualizar (Solo si existe nueva versión)</ComboBoxItem>
-                                <ComboBoxItem Tag="Reinstall">Reinstalar (Descarga y reconfigura la última versión)</ComboBoxItem>
+                                <ComboBoxItem Tag="Reinstall">Reinstalar (Descarga limpia de la última versión)</ComboBoxItem>
                                 <ComboBoxItem Tag="Uninstall">Desinstalar (Remover Runtime, PATH y Extensión)</ComboBoxItem>
                             </ComboBox>
                         </StackPanel>
                     </Border>
 
-                    <!-- Tarjeta 2: Ruta de instalación (Oculta en modo Desinstalar) -->
+                    <!-- Tarjeta: Ruta de instalación -->
                     <Border x:Name="CardPath" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
                             BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
                             BorderThickness="1" CornerRadius="8" Padding="16">
@@ -59,7 +82,7 @@
                             <TextBlock Text="Ubicación de instalación" Style="{StaticResource BodyStrongTextBlockStyle}"/>
                             <Grid ColumnDefinitions="*, Auto" ColumnSpacing="8">
                                 <TextBox x:Name="TxtInstallPath" 
-                                         Text="C:\Users\Asus\AppData\Local\Programs\Joss" 
+                                         Text="" 
                                          VerticalAlignment="Center"/>
                                 <Button Grid.Column="1" Click="BtnBrowse_Click" VerticalAlignment="Center">
                                     <StackPanel Orientation="Horizontal" Spacing="8">
@@ -71,7 +94,7 @@
                         </StackPanel>
                     </Border>
 
-                    <!-- Tarjeta 3: Opciones de componentes -->
+                    <!-- Tarjeta: Opciones adicionales -->
                     <Border x:Name="CardOptions" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
                             BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
                             BorderThickness="1" CornerRadius="8" Padding="16">
@@ -101,16 +124,17 @@
                     </Border>
                 </StackPanel>
 
-                <!-- PANEL 2: PROGRESO DE ACCIÓN -->
-                <StackPanel x:Name="ProgressPanel" Spacing="16" VerticalAlignment="Center" Visibility="Collapsed" Margin="0,20,0,0">
+                <!-- VISTA 2: PROGRESO Y PANTALLA FINAL VIVA -->
+                <StackPanel x:Name="ProgressPanel" Spacing="16" VerticalAlignment="Center" Visibility="Collapsed" Margin="0,16,0,0">
                     <StackPanel Spacing="6" HorizontalAlignment="Center">
-                        <FontIcon x:Name="IconStatus" Glyph="&#xE896;" FontSize="36" Foreground="{ThemeResource AccentTextFillColorPrimaryBrush}"/>
+                        <FontIcon x:Name="IconStatus" Glyph="&#xE896;" FontSize="40" Foreground="{ThemeResource AccentTextFillColorPrimaryBrush}"/>
                         <TextBlock x:Name="TxtStatus" Text="Procesando..." Style="{StaticResource SubtitleTextBlockStyle}" HorizontalAlignment="Center"/>
                         <TextBlock x:Name="TxtDetail" Text="Iniciando tarea..." Style="{StaticResource CaptionTextBlockStyle}" Foreground="{ThemeResource TextFillColorSecondaryBrush}" HorizontalAlignment="Center"/>
                     </StackPanel>
 
                     <ProgressBar x:Name="ProgressBarInstall" IsIndeterminate="True" Height="6" CornerRadius="3" MaxWidth="520"/>
 
+                    <!-- Consola de registro -->
                     <Border Background="{ThemeResource LayerFillColorDefaultBrush}" 
                             BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
                             BorderThickness="1" CornerRadius="6" Padding="12" MaxWidth="520">
@@ -122,19 +146,43 @@
                                        TextWrapping="Wrap"/>
                         </ScrollViewer>
                     </Border>
+
+                    <!-- Acciones rápidas cuando termina con éxito -->
+                    <StackPanel x:Name="QuickActionsPanel" Orientation="Horizontal" HorizontalAlignment="Center" Spacing="12" Visibility="Collapsed" Margin="0,8,0,0">
+                        <Button Click="BtnOpenTerminal_Click">
+                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                <FontIcon Glyph="&#xE756;" FontSize="13"/>
+                                <TextBlock Text="Abrir terminal"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Click="BtnOpenFolder_Click">
+                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                <FontIcon Glyph="&#xED25;" FontSize="13"/>
+                                <TextBlock Text="Abrir carpeta"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
                 </StackPanel>
 
             </Grid>
         </ScrollViewer>
 
-        <!-- Barra inferior de acciones -->
+        <!-- Barra inferior de acciones persistente -->
         <Border Grid.Row="2" 
                 Background="{ThemeResource LayerFillColorAltBrush}" 
                 BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
                 BorderThickness="0,1,0,0" Padding="28,14">
-            <Grid ColumnDefinitions="*, Auto, Auto" ColumnSpacing="12">
-                <Button x:Name="BtnCancel" Grid.Column="1" Content="Salir" Width="90" Click="BtnCancel_Click"/>
-                <Button x:Name="BtnAction" Grid.Column="2" Content="Continuar" Width="120" 
+            <Grid ColumnDefinitions="Auto, *, Auto, Auto" ColumnSpacing="12">
+                <!-- Botón de retorno al menú principal -->
+                <Button x:Name="BtnBackToMenu" Click="BtnBackToMenu_Click" Visibility="Collapsed">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                        <FontIcon Glyph="&#xE72B;" FontSize="12"/>
+                        <TextBlock Text="Volver al menú"/>
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="BtnCancel" Grid.Column="2" Content="Salir" Width="90" Click="BtnCancel_Click"/>
+                <Button x:Name="BtnAction" Grid.Column="3" Content="Continuar" Width="120" 
                         Style="{StaticResource AccentButtonStyle}" Click="BtnAction_Click"/>
             </Grid>
         </Border>
