@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Joss-Programming-Language-installer (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Joss-Programming-Language-installer (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
