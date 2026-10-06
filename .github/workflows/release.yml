@@ -53,15 +53,15 @@ jobs:
           Write-Host "Etiqueta resuelta para la release: $tag"
           "tag=$tag" >> $env:GITHUB_OUTPUT
 
-      - name: Publish x64 Single-File Executable
+      - name: Publish x64 Package
         run: |
-          dotnet publish Joss-Programming-Language-installer.csproj -c Release -p:Platform=x64 -r win-x64 -p:SelfContained=true -p:WindowsAppSDKSelfContained=true -p:WindowsPackageType=None -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -p:PublishTrimmed=false -p:EnableCompressionInSingleFile=true -o dist/x64
-          Copy-Item dist/x64/Joss-Programming-Language-installer.exe dist/joss-installer-windows-x64.exe
+          dotnet publish Joss-Programming-Language-installer.csproj -c Release -p:Platform=x64 -r win-x64 -p:SelfContained=true -p:WindowsAppSDKSelfContained=true -p:WindowsPackageType=None -p:PublishSingleFile=false -p:PublishTrimmed=false -o dist/x64_app
+          Compress-Archive -Path dist/x64_app/* -DestinationPath dist/joss-installer-windows-x64.zip -CompressionLevel Optimal
 
-      - name: Publish ARM64 Single-File Executable
+      - name: Publish ARM64 Package
         run: |
-          dotnet publish Joss-Programming-Language-installer.csproj -c Release -p:Platform=arm64 -r win-arm64 -p:SelfContained=true -p:WindowsAppSDKSelfContained=true -p:WindowsPackageType=None -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -p:PublishTrimmed=false -p:EnableCompressionInSingleFile=true -o dist/arm64
-          Copy-Item dist/arm64/Joss-Programming-Language-installer.exe dist/joss-installer-windows-arm64.exe
+          dotnet publish Joss-Programming-Language-installer.csproj -c Release -p:Platform=arm64 -r win-arm64 -p:SelfContained=true -p:WindowsAppSDKSelfContained=true -p:WindowsPackageType=None -p:PublishSingleFile=false -p:PublishTrimmed=false -o dist/arm64_app
+          Compress-Archive -Path dist/arm64_app/* -DestinationPath dist/joss-installer-windows-arm64.zip -CompressionLevel Optimal
 
       - name: Publish or update GitHub Release
         shell: pwsh
@@ -71,8 +71,8 @@ jobs:
           RELEASE_TAG: ${{ steps.release_meta.outputs.tag }}
         run: |
           $files = @(
-            "dist/joss-installer-windows-x64.exe",
-            "dist/joss-installer-windows-arm64.exe"
+            "dist/joss-installer-windows-x64.zip",
+            "dist/joss-installer-windows-arm64.zip"
           )
 
           # Verificar si la release ya existe
@@ -80,7 +80,7 @@ jobs:
           $releaseExists = $LASTEXITCODE -eq 0
 
           if ($releaseExists) {
-            Write-Host "La release '$env:RELEASE_TAG' ya existe. Subiendo y actualizando binarios..."
+            Write-Host "La release '$env:RELEASE_TAG' ya existe. Subiendo y actualizando archivos..."
             gh release upload $env:RELEASE_TAG @files --repo $env:GH_REPO --clobber
             if ($LASTEXITCODE -ne 0) {
               throw "No se pudieron actualizar los archivos de la release '$env:RELEASE_TAG'"
