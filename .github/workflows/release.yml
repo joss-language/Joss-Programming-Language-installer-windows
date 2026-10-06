@@ -5,6 +5,11 @@ on:
     tags:
       - 'v*'
   workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Tag de la release (ej. v1.0.0)'
+        required: false
+        default: 'latest'
 
 permissions:
   contents: write
@@ -23,17 +28,18 @@ jobs:
 
       - name: Publish x64 Single-File Executable
         run: |
-          dotnet publish Joss-Programming-Language-installer.csproj -c Release -p:Platform=x64 -r win-x64 -p:WindowsPackageType=None -p:PublishSingleFile=true -o dist/x64
+          dotnet publish Joss-Programming-Language-installer.csproj -c Release -p:Platform=x64 -r win-x64 -p:PublishProfile=Properties/PublishProfiles/win-x64.pubxml -o dist/x64
           Copy-Item dist/x64/Joss-Programming-Language-installer.exe dist/joss-installer-windows-x64.exe
 
       - name: Publish ARM64 Single-File Executable
         run: |
-          dotnet publish Joss-Programming-Language-installer.csproj -c Release -p:Platform=arm64 -r win-arm64 -p:WindowsPackageType=None -p:PublishSingleFile=true -o dist/arm64
+          dotnet publish Joss-Programming-Language-installer.csproj -c Release -p:Platform=arm64 -r win-arm64 -p:PublishProfile=Properties/PublishProfiles/win-arm64.pubxml -o dist/arm64
           Copy-Item dist/arm64/Joss-Programming-Language-installer.exe dist/joss-installer-windows-arm64.exe
 
       - name: Upload Release Asset
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ github.ref_type == 'tag' && github.ref_name || (inputs.tag_name != '' && inputs.tag_name || 'latest') }}
           files: |
             dist/joss-installer-windows-x64.exe
             dist/joss-installer-windows-arm64.exe
