@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32;
+using Microsoft.Win32;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -264,7 +264,7 @@ namespace Joss_Programming_Language_installer.Services
             SendMessageTimeout((IntPtr)HWND_BROADCAST, WM_SETTINGCHANGE, UIntPtr.Zero, "Environment", SMTO_ABORTIFHUNG, 2000, out _);
         }
 
-        private async Task InstallVsCodeExtensionAsync(string vsixZipUrl)
+        private async Task InstallVsCodeExtensionAsync(string vsixZipUrl, IProgress<InstallProgressReport>? progress = null)
         {
             string tempVsixZip = Path.Combine(Path.GetTempPath(), "jossecurity-vscode.zip");
             await DownloadFileAsync(vsixZipUrl, tempVsixZip);
@@ -274,11 +274,23 @@ namespace Joss_Programming_Language_installer.Services
             Directory.CreateDirectory(vsixExtractedPath);
 
             ZipFile.ExtractToDirectory(tempVsixZip, vsixExtractedPath);
-            var vsixFiles = Directory.GetFiles(vsixExtractedPath, "*.vsix");
+            var vsixFiles = Directory.GetFiles(vsixExtractedPath, "*.vsix", SearchOption.AllDirectories);
 
             if (vsixFiles.Length > 0)
             {
-                await Task.Run(() => RunVsCodeCli($"--install-extension \"{vsixFiles[0]}\" --force"));
+                string targetVsix = vsixFiles[0];
+                await Task.Run(() =>
+                {
+                    bool success = RunVsCodeCli($"--install-extension \"{targetVsix}\" --force", out string output);
+                    if (!success)
+                    {
+                        throw new Exception($"No se pudo instalar la extensión de VS Code: {output}");
+                    }
+                });
+            }
+            else
+            {
+                throw new Exception("El archivo jossecurity-vscode.zip no contiene ningún archivo de extensión .vsix.");
             }
 
             if (File.Exists(tempVsixZip)) File.Delete(tempVsixZip);
@@ -287,41 +299,97 @@ namespace Joss_Programming_Language_installer.Services
 
         private static void UninstallVsCodeExtension()
         {
-            RunVsCodeCli("--uninstall-extension joss-language.joss-language");
+            // El ID del paquete según el archivo vsix es jossecurity.joss-language
+            RunVsCodeCli("--uninstall-extension jossecurity.joss-language", out _);
+            // Compatibilidad hacia atrás si se usó joss-language.joss-language
+            RunVsCodeCli("--uninstall-extension joss-language.joss-language", out _);
         }
 
-        private static void RunVsCodeCli(string arguments)
+        private static string? ResolveVsCodeCliPath()
         {
-            try
+            // 1. Revisar ubicaciones típicas de instalación en Windows
+            string[] possiblePaths = new[]
             {
-                var psi = new ProcessStartInfo
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Programs", "Microsoft VS Code", "bin", "code.cmd"),
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles), "Microsoft VS Code", "bin", "code.cmd"),
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86), "Microsoft VS Code", "bin", "code.cmd"),
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Programs", "Microsoft VS Code Insiders", "bin", "code-insiders.cmd"),
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles), "Microsoft VS Code Insiders", "bin", "code-insiders.cmd"),
+            };
+
+            foreach (var path in possiblePaths)
+            {
+                if (File.Exists(path)) return path;
+            }
+
+            // 2. Revisar si está disponible en el PATH
+            string pathEnv = Environment.GetEnvironmentVariable("PATH") ?? "";
+            foreach (var dir in pathEnv.Split(';', StringSplitOptions.RemoveEmptyEntries))
+            {
+                try
                 {
-                    FileName = "code.cmd",
-                    Arguments = arguments,
+                    string candidate = Path.Combine(dir.Trim(), "code.cmd");
+                    if (File.Exists(candidate)) return candidate;
+                }
+                catch { }
+            }
+
+            return null;
+        }
+
+        private static bool RunVsCodeCli(string arguments, out string output)
+        {
+            output = string.Empty;
+            string? codePath = ResolveVsCodeCliPath();
+
+            ProcessStartInfo psi;
+            if (!string.IsNullOrEmpty(codePath))
+            {
+                // En Windows, los archivos .cmd requieren cmd.exe o UseShellExecute si se llaman sin comspec directo
+                psi = new ProcessStartInfo
+                {
+                    FileName = "cmd.exe",
+                    Arguments = $"/c \"\"{codePath}\" {arguments}\"",
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = true,
                     UseShellExecute = false,
                     CreateNoWindow = true
                 };
-                using var p = Process.Start(psi);
-                p?.WaitForExit(30000);
             }
-            catch
+            else
             {
-                string localCode = Path.Combine(
-                    Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                    "Programs", "Microsoft VS Code", "bin", "code.cmd");
-
-                if (File.Exists(localCode))
+                // Intento fallback si code.cmd está directamente en PATH
+                psi = new ProcessStartInfo
                 {
-                    var psi = new ProcessStartInfo
-                    {
-                        FileName = localCode,
-                        Arguments = arguments,
-                        UseShellExecute = false,
-                        CreateNoWindow = true
-                    };
-                    using var p = Process.Start(psi);
-                    p?.WaitForExit(30000);
+                    FileName = "cmd.exe",
+                    Arguments = $"/c \"code.cmd {arguments}\"",
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                };
+            }
+
+            try
+            {
+                using var p = Process.Start(psi);
+                if (p == null)
+                {
+                    output = "No se pudo iniciar el proceso de VS Code.";
+                    return false;
                 }
+
+                string stdout = p.StandardOutput.ReadToEnd();
+                string stderr = p.StandardError.ReadToEnd();
+                p.WaitForExit(45000);
+
+                output = $"{stdout} {stderr}".Trim();
+                return p.ExitCode == 0;
+            }
+            catch (Exception ex)
+            {
+                output = ex.Message;
+                return false;
             }
         }
     }

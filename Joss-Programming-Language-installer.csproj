@@ -37,6 +37,10 @@
 		<ProjectCapability Include="Msix" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Strings\" />
+	</ItemGroup>
+
 	<PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
 		<HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
 	</PropertyGroup>

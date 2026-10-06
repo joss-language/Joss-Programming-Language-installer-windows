@@ -1,0 +1,3110 @@
+[
+  {
+    "type": "batch_add_keys",
+    "data": {
+      "affected_files": {
+        "intl_en.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_ar.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_be.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_bg.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_bn.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_cs.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_de.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_el.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_es.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_fa.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_fi.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_fr.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_hu.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_id.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_it.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_ja.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_ko.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_ml.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_nb.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_nl.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_or.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_pa.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_pl.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_pt.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_ru.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_sv.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_tr.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_uk.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_vi.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        },
+        "intl_zh.arb": {
+          "app_header_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_env_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "app_header_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_checking": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_refresh": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "status_not_installed": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "lbl_action": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_uninstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_location_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_browse": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "card_options_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_install": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_path_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_update": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "opt_reinstall": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_title": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_back_to_menu": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "chk_vscode_desc": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_folder": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_exit": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_open_terminal": {
+            "old_value": null,
+            "old_desc": null
+          },
+          "btn_continue": {
+            "old_value": null,
+            "old_desc": null
+          }
+        }
+      }
+    },
+    "timestamp": "2026-10-01T15:05:07.979810",
+    "platform": "flutter"
+  },
+  {
+    "type": "batch_add_keys",
+    "data": {
+      "affected_files": {
+        "intl_en.arb": {},
+        "intl_ar.arb": {},
+        "intl_be.arb": {},
+        "intl_bg.arb": {},
+        "intl_bn.arb": {},
+        "intl_cs.arb": {},
+        "intl_de.arb": {},
+        "intl_el.arb": {},
+        "intl_es.arb": {},
+        "intl_fa.arb": {},
+        "intl_fi.arb": {},
+        "intl_fr.arb": {},
+        "intl_hu.arb": {},
+        "intl_id.arb": {},
+        "intl_it.arb": {},
+        "intl_ja.arb": {},
+        "intl_ko.arb": {},
+        "intl_ml.arb": {},
+        "intl_nb.arb": {},
+        "intl_nl.arb": {},
+        "intl_or.arb": {},
+        "intl_pa.arb": {},
+        "intl_pl.arb": {},
+        "intl_pt.arb": {},
+        "intl_ru.arb": {},
+        "intl_sv.arb": {},
+        "intl_tr.arb": {},
+        "intl_uk.arb": {},
+        "intl_vi.arb": {},
+        "intl_zh.arb": {}
+      }
+    },
+    "timestamp": "2026-10-01T15:32:17.062765",
+    "platform": "flutter"
+  }
+]
